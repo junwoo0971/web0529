@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="btns">
+        <div class="container">
+            <div class="btns__menu">
+                <button class="btn 자기소개">자기소개</button>
+                <button class="btn 좋아하는것">좋아하는것</button>
+                <button class="btn 성격">성격</button>
+                <button class="btn 직업">직업</button>
+                <button class="btn contact">Contact</button>
+            </div>
+        </div>
+    </div>
+
+    <section id="자기소개">
+        <div class="wrapper">
+            <h1>이름</h1>
+            <h2>자기소개</h2>
+            <h3>안녕하세요. 캐릭터 디자이너를 꿈꾸고 있는 허준우 입니다. 지금은 시각디자인과에 재학 중입니다.</h3>
+        </div>
+    </section>
+    <section id="좋아하는것">
+        <div class="wrapper">
+            <h1>좋아하는것</h1>
+            <h2>저는 캐릭터 디자인 하는 것을 좋아합니다</h2>
+            <h3>저는 시각적으로 다양한 사물을 보며 캐릭터를 디자인하는 것을 좋아합니다.</h3>
+        </div>
+    </section>
+    <section id="성격">
+        <div class="wrapper">
+            <h1>성격</h1>
+            <h2>저는 긍정적인 성격을 가지고 있습니다.</h2>
+            <h3>저는 항상 긍정적인 에너지를 유지하며, 어떤 상황에서도 희망을 잃지 않습니다.</h3>
+        </div>
+    </section>
+    <section id="직업">          
+        <div class="wrapper">
+            <h1>직업</h1>
+            <h2>저는 나중에 캐릭터 디자이너라는 직업을 갖고싶습니다.</h2>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Blanditiis alias mollitia, repellat sit perspiciatis amet dolor, soluta, 
+                 eum dolorum hic tenetur ipsa eligendi expedita provident. Tenetur, cupiditate. 
+                 Consectetur, velit maiores!</h3>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="wrapper">
+            <h1>Contact</h1>
+            <h2>MungTeangE World Huheheh Igonan</h2>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Blanditiis alias mollitia, repellat sit perspiciatis amet dolor, 
+                soluta, eum dolorum hic tenetur ipsa eligendi expedita provident. Tenetur, cupiditate. Consectetur, velit maiores!</h3>
+        </div>
+    </section>
+    <script>
+        const btnHome = document.querySelector('.자기소개');
+        const sectionHome = document.querySelector('#자기소개');
+        btnHome.addEventListener('click', function() {
+            sectionHome.scrollIntoView({behavior:"smooth", block:"center"})
+        });
+        const btnAbout = document.querySelector('.좋아하는것');
+        const sectionAbout = document.querySelector('#좋아하는것');
+        btnAbout.addEventListener('click', function() {
+            sectionAbout.scrollIntoView({behavior:"smooth", block:"center"})
+        });
+        const btnSkills = document.querySelector('.성격');
+        const sectionSkills = document.querySelector('#성격');
+        btnSkills.addEventListener('click', function() {
+            sectionSkills.scrollIntoView({behavior:"smooth", block:"center"})
+        });
+        const btnWorks = document.querySelector('.직업');
+        const sectionWorks = document.querySelector('#직업');
+        btnWorks.addEventListener('click', function() {
+            sectionWorks.scrollIntoView({behavior:"smooth", block:"center"})
+        });
+        const btnContact = document.querySelector('.contact');
+        const sectionContact = document.querySelector('#contact');
+        btnContact.addEventListener('click', function() {
+            sectionContact.scrollIntoView({behavior:"smooth", block:"center"})
+        });
+    </script>
+</body>
+</html>

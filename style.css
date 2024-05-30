@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+section:nth-child(odd) {
+    background-image: url("ThumbnailPrint.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+  }
+
+.wrapper {
+    padding-top: 88px;
+    max-width: 1200px;
+    margin: auto;
+}
+h1 {
+    color: #ff0000;
+    font-size: 48px;
+}
+h2 {
+    font-size: 32px;
+}
+h3 {
+    font-size: 24px;
+    font-weight: 300;
+}
+.btns {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.btns .container {
+    position: relative;
+    max-width: 900px;
+    padding: 20px;
+    background-color: gray;
+    margin: auto;
+}
+.btns__menu {
+    display: flex;
+    justify-content: center;
+}
+.btns__menu .btn {
+    font-size: 16px;
+    font-weight: 600;
+    color: #193a40;
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+    margin: 4px;
+    cursor: pointer;
+    background-color: #9ad2d9;
+}
+button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.btns__menu .btn:hover {
+    background-color: skyblue;
+    border: 1px solid #666;
+}
+
+
